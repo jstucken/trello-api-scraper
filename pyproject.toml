@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "trello_api_scraper"
+version = "0.1.0"
+description = "Uses Trello API to scrape all cards on a Trello board"
+authors = ["jstucken <jstucken@yahoo.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+typer = "^0.6.1"
+rich = "^13.3.1"
+python-dotenv = "^0.21.1"
+requests = "^2.31.0"
+pytz = "^2023.3"
+
+[tool.poetry.dev-dependencies]
+black = "^22.8.0"
+isort = "^5.10.1"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+flake8-bugbear = "^23.3.23"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
